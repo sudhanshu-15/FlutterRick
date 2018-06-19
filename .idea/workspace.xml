@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bc09cb3-6d25-4be5-9d02-9411a6bbff80" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/character_list.dart" afterPath="$PROJECT_DIR$/lib/pages/character_list.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/api/repository.dart" afterPath="$PROJECT_DIR$/lib/api/repository.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/character_detail.dart" afterPath="$PROJECT_DIR$/lib/pages/character_detail.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -55,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repository.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="repository.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/api/repository.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="183">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -70,7 +71,7 @@
       <file leaf-file-name="character_list.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/character_list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-383">
+            <state relative-caret-position="-410">
               <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -79,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="character_detail.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="character_detail.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/character_detail.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="74">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -100,6 +101,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -114,10 +120,10 @@
         <option value="$PROJECT_DIR$/lib/pages/home.dart" />
         <option value="$PROJECT_DIR$/lib/models/character.dart" />
         <option value="$PROJECT_DIR$/lib/api/api.dart" />
-        <option value="$PROJECT_DIR$/lib/api/repository.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/pages/character_list.dart" />
         <option value="$PROJECT_DIR$/lib/pages/character_detail.dart" />
+        <option value="$PROJECT_DIR$/lib/api/repository.dart" />
       </list>
     </option>
   </component>
@@ -390,16 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/api/repository.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -410,9 +406,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/character_detail.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/character_list.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
+        <state relative-caret-position="-410">
           <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -420,12 +426,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/character_detail.dart">
+    <entry file="file://$PROJECT_DIR$/lib/api/repository.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="183">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
