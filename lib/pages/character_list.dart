@@ -52,9 +52,12 @@ class CharacterList extends StatelessWidget {
                 );
           },
           child: new GridTile(
-            child: new Image.network(
-              character.image,
-              fit: BoxFit.cover,
+            child: new Hero(
+              tag: character.id,
+              child: new Image.network(
+                character.image,
+                fit: BoxFit.cover,
+              ),
             ),
             footer: new GridTileBar(
               backgroundColor: Colors.black45,
