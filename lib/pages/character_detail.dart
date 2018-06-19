@@ -13,34 +13,56 @@ class CharacterDetail extends StatelessWidget {
     var text_theme =
         Theme.of(context).textTheme.title.copyWith(color: Colors.white);
 
+    Widget _generatePortraitScreen() {
+      return new Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          _createImageAvatar(_character.image),
+          _createListTile(Icons.person, _character.name, text_theme),
+          _createListTile(Icons.person_pin, _character.species, text_theme),
+          _createListTile(Icons.face, _character.gender, text_theme),
+          _createListTile(Icons.home, _character.originName, text_theme),
+          _createListTile(Icons.my_location, _character.lastLocation, text_theme),
+        ],
+      );
+    }
+
+    Widget _generateLandscapeScreen() {
+      return new Row(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          _createImageAvatar(_character.image),
+          new Expanded(
+            flex: 1,
+            child: new Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: new Column(
+                children: <Widget>[
+                  _createListTile(Icons.person, _character.name, text_theme),
+                  _createListTile(Icons.person_pin, _character.species, text_theme),
+                  _createListTile(Icons.face, _character.gender, text_theme),
+                  _createListTile(Icons.home, _character.originName, text_theme),
+                  _createListTile(Icons.my_location, _character.lastLocation, text_theme),
+                ],
+              ),
+            ),
+          )
+        ],
+      );
+    }
+
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(_character.name),
       ),
       body: new Card(
-        margin: EdgeInsets.all(8.0),
-        color:
-            _character.status == "Alive" ? Colors.green[700] : Colors.red[300],
-        child: MediaQuery.of(context).orientation == Orientation.portrait ? new Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            _createImageAvatar(_character.image),
-            _createListTile(Icons.person, _character.name, text_theme),
-            _createListTile(Icons.person_pin, _character.species, text_theme),
-            _createListTile(Icons.face, _character.gender, text_theme),
-            _createListTile(Icons.home, _character.originName, text_theme),
-            _createListTile(Icons.my_location, _character.lastLocation, text_theme),
-          ],
-        ) : new Row(mainAxisSize: MainAxisSize.min, children: <Widget>[_createImageAvatar(_character.image), new Expanded(flex: 1, child: new Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: new Column(children: <Widget>[
-          _createListTile(Icons.person, _character.name, text_theme),
-          _createListTile(Icons.person_pin, _character.species, text_theme),
-          _createListTile(Icons.face, _character.gender, text_theme),
-          _createListTile(Icons.home, _character.originName, text_theme),
-          _createListTile(Icons.my_location, _character.lastLocation, text_theme),],),
-        ),)],),
-      ),
+          margin: EdgeInsets.all(8.0),
+          color: _character.status == "Alive"
+              ? Colors.green[700]
+              : Colors.red[300],
+          child: MediaQuery.of(context).orientation == Orientation.portrait
+              ? _generatePortraitScreen()
+              : _generateLandscapeScreen()),
     );
   }
 
@@ -68,9 +90,5 @@ class CharacterDetail extends StatelessWidget {
             image: new NetworkImage(imageUrl), fit: BoxFit.cover),
       ),
     );
-  }
-
-  Widget _generatePortraitScreen() {
-
   }
 }
