@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rick/api/repository.dart';
 import 'package:flutter_rick/models/character.dart';
+import 'package:flutter_rick/pages/character_detail.dart';
 
 class CharacterList extends StatelessWidget {
   @override
@@ -16,7 +17,6 @@ class CharacterList extends StatelessWidget {
             );
           }
           List characters = snapshot.data;
-          print(characters);
           return new CustomScrollView(
             primary: false,
             slivers: <Widget>[
@@ -44,7 +44,12 @@ class CharacterList extends StatelessWidget {
 
         var listItem = new GestureDetector(
           onTap: () {
-            print("${character.name} was clicked");
+            Navigator.of(context).push(
+                  new MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        new CharacterDetail(character),
+                  ),
+                );
           },
           child: new GridTile(
             child: new Image.network(
