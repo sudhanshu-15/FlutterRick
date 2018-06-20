@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rick/pages/character_list.dart';
 
 void main() => runApp(new MyApp());
 
@@ -16,15 +17,7 @@ class MyApp extends StatelessWidget {
           title: new Text('RickOPedia'),
           backgroundColor: Colors.green[400],
         ),
-        body: new Center(
-          child: new Container(
-            child: new Text(
-              'Sample App to learn Flutter',
-              style: Theme.of(context).textTheme.headline,
-            ),
-            color: Colors.white70,
-          ),
-        ),
+        body: new CharacterList(),
       ),
     );
   }

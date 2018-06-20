@@ -11,10 +11,8 @@ class Repository {
 
   Future<List<Character>> getCharacters() async {
     return _networkUtil.get(CHAR_URL).then((dynamic res) {
-      print(res.toString());
       if (res["error"] != null) return null;
       var result = res["results"];
-      print(result);
       List<Character> characterList = List<Character>();
       for (int i = 0; i < result.length; i++) {
         characterList.add(Character.map(result[i]));
