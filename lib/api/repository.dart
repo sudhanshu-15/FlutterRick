@@ -10,14 +10,14 @@ class Repository {
   static final EPISODE_URL = BASE_URL + "episode/";
 
   Future<List<Character>> getCharacters() async {
-    return _networkUtil.get(CHAR_URL).then((dynamic res) {
-      if (res["error"] != null) return null;
-      var result = res["results"];
-      List<Character> characterList = List<Character>();
-      for (int i = 0; i < result.length; i++) {
-        characterList.add(Character.map(result[i]));
-      }
-      return characterList;
-    });
+    return _networkUtil.get(CHAR_URL).then(getCharacterList);
+  }
+
+  List<Character> getCharacterList(dynamic res) {
+    if (res["error"] != null) return null;
+    var result = res["results"];
+    List<Character> characterList = List<Character>();
+    result.forEach((element) => characterList.add(Character.map(element)));
+    return characterList;
   }
 }
