@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc09cb3-6d25-4be5-9d02-9411a6bbff80" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/api/api.dart" afterPath="$PROJECT_DIR$/lib/api/api.dart" />
       <change beforePath="$PROJECT_DIR$/lib/api/repository.dart" afterPath="$PROJECT_DIR$/lib/api/repository.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/character_list.dart" afterPath="$PROJECT_DIR$/lib/pages/character_list.dart" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -49,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/lib/api/api.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -57,21 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="repository.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="repository.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/api/repository.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -79,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configs.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_characters_test.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/get_characters_test.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configs.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/utils/configs.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,8 +95,8 @@
       <file leaf-file-name="character_test.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/character_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="57" column="72" lean-forward="false" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
+            <state relative-caret-position="178">
+              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -114,23 +117,9 @@
       <file leaf-file-name="character_list.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/character_list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="character_detail.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/character_detail.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,21 +151,23 @@
       <list>
         <option value="$PROJECT_DIR$/lib/pages/home.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
-        <option value="$PROJECT_DIR$/lib/pages/character_list.dart" />
         <option value="$PROJECT_DIR$/lib/pages/character_detail.dart" />
         <option value="$PROJECT_DIR$/lib/models/character.dart" />
         <option value="$PROJECT_DIR$/test/CharacterListUnitTest.dart" />
         <option value="$PROJECT_DIR$/test/character_test.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/lib/api/api.dart" />
-        <option value="$PROJECT_DIR$/lib/api/repository.dart" />
         <option value="$PROJECT_DIR$/lib/utils/configs.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/pages/character_list.dart" />
+        <option value="$PROJECT_DIR$/test/fetch_characters_test.dart" />
+        <option value="$PROJECT_DIR$/test/get_characters_test.dart" />
+        <option value="$PROJECT_DIR$/lib/api/repository.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="y" value="303" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
@@ -243,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager" selected="Flutter Test.getCharacters">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -278,25 +269,25 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="Character creation test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Character creation test" />
-      <option name="testFile" value="$PROJECT_DIR$/test/CharacterListUnitTest.dart" />
-    </configuration>
     <configuration name="Character list creation test (1)" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="Character list creation test" />
       <option name="testFile" value="$PROJECT_DIR$/test/character_test.dart" />
-    </configuration>
-    <configuration name="Character list creation test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Character list creation test" />
-      <option name="testFile" value="$PROJECT_DIR$/test/CharacterListUnitTest.dart" />
     </configuration>
     <configuration name="Character list test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="Character list test" />
       <option name="testFile" value="$PROJECT_DIR$/test/character_test.dart" />
     </configuration>
-    <configuration name="Create character list" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="Create character list" />
-      <option name="testFile" value="$PROJECT_DIR$/test/CharacterListUnitTest.dart" />
+    <configuration name="get list of characters if http call is successful" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="get list of characters if http call is successful" />
+      <option name="testFile" value="$PROJECT_DIR$/test/fetch_characters_test.dart" />
+    </configuration>
+    <configuration name="getCharacters" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="getCharacters" />
+      <option name="testFile" value="$PROJECT_DIR$/test/get_characters_test.dart" />
+    </configuration>
+    <configuration name="throw exception if http call fails with error" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="throw exception if http call fails with error" />
+      <option name="testFile" value="$PROJECT_DIR$/test/fetch_characters_test.dart" />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -352,19 +343,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Flutter.main.dart" />
-      <item index="1" class="java.lang.String" itemvalue="Flutter Test.Create character list" />
-      <item index="2" class="java.lang.String" itemvalue="Flutter Test.Character list creation test" />
-      <item index="3" class="java.lang.String" itemvalue="Flutter Test.Character creation test" />
-      <item index="4" class="java.lang.String" itemvalue="Flutter Test.Character list test" />
-      <item index="5" class="java.lang.String" itemvalue="Flutter Test.Character list creation test (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Flutter Test.Character list test" />
+      <item index="2" class="java.lang.String" itemvalue="Flutter Test.Character list creation test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Flutter Test.get list of characters if http call is successful" />
+      <item index="4" class="java.lang.String" itemvalue="Flutter Test.throw exception if http call fails with error" />
+      <item index="5" class="java.lang.String" itemvalue="Flutter Test.getCharacters" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flutter Test.Character list creation test (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Flutter Test.Character list test" />
-        <item index="2" class="java.lang.String" itemvalue="Flutter Test.Character list creation test" />
-        <item index="3" class="java.lang.String" itemvalue="Flutter Test.Character creation test" />
-        <item index="4" class="java.lang.String" itemvalue="Flutter Test.Create character list" />
+        <item index="0" class="java.lang.String" itemvalue="Flutter Test.getCharacters" />
+        <item index="1" class="java.lang.String" itemvalue="Flutter Test.throw exception if http call fails with error" />
+        <item index="2" class="java.lang.String" itemvalue="Flutter Test.get list of characters if http call is successful" />
+        <item index="3" class="java.lang.String" itemvalue="Flutter Test.Character list creation test (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Flutter Test.Character list test" />
       </list>
     </recent_temporary>
   </component>
@@ -385,21 +376,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Character_creation_test - 2018.06.20 at 19h 24m 25s.xml">
-      <configuration name="Character creation test" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Character_creation_test - 2018.06.20 at 19h 25m 17s.xml">
-      <configuration name="Character creation test" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Character_list_creation_test - 2018.06.20 at 19h 22m 11s.xml">
-      <configuration name="Character list creation test" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Character_list_creation_test - 2018.06.20 at 19h 25m 29s.xml">
-      <configuration name="Character list creation test" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Character_list_creation_test - 2018.06.20 at 19h 28m 35s.xml">
-      <configuration name="Character list creation test" configurationId="FlutterTestConfigType" />
-    </history-entry>
     <history-entry file="Character_list_creation_test_(1) - 2018.06.20 at 20h 06m 48s.xml">
       <configuration name="Character list creation test (1)" configurationId="FlutterTestConfigType" />
     </history-entry>
@@ -409,11 +385,26 @@
     <history-entry file="Character_list_test - 2018.06.20 at 20h 04m 55s.xml">
       <configuration name="Character list test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Create_character_list - 2018.06.20 at 19h 10m 55s.xml">
-      <configuration name="Create character list" configurationId="FlutterTestConfigType" />
+    <history-entry file="getCharacters - 2018.06.21 at 12h 16m 20s.xml">
+      <configuration name="getCharacters" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Create_character_list - 2018.06.20 at 19h 19m 33s.xml">
-      <configuration name="Create character list" configurationId="FlutterTestConfigType" />
+    <history-entry file="getCharacters - 2018.06.21 at 12h 19m 32s.xml">
+      <configuration name="getCharacters" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="get_list_of_characters_if_http_call_is_successful - 2018.06.21 at 12h 04m 55s.xml">
+      <configuration name="get list of characters if http call is successful" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="get_list_of_characters_if_http_call_is_successful - 2018.06.21 at 12h 08m 07s.xml">
+      <configuration name="get list of characters if http call is successful" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="get_list_of_characters_if_http_call_is_successful - 2018.06.21 at 12h 09m 21s.xml">
+      <configuration name="get list of characters if http call is successful" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="get_list_of_characters_if_http_call_is_successful - 2018.06.21 at 12h 12m 00s.xml">
+      <configuration name="get list of characters if http call is successful" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="throw_exception_if_http_call_fails_with_error - 2018.06.21 at 12h 14m 40s.xml">
+      <configuration name="throw exception if http call fails with error" configurationId="FlutterTestConfigType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -431,7 +422,7 @@
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.503231" order="21" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -445,7 +436,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -531,9 +522,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +531,7 @@
         <state relative-caret-position="145">
           <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,7 +650,7 @@
         <state relative-caret-position="145">
           <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/character_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="57" column="72" lean-forward="false" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -711,49 +690,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/lib/utils/configs.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/character_list.dart">
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="167">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/api/api.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/character_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/character_list.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/get_characters_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/api/repository.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/configs.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
