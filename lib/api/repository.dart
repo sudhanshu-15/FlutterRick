@@ -2,15 +2,15 @@ import 'dart:async';
 
 import 'package:flutter_rick/api/api.dart';
 import 'package:flutter_rick/models/character.dart';
+import 'package:http/http.dart' as http;
+import 'package:flutter_rick/utils/configs.dart';
 
 class Repository {
   NetworkUtil _networkUtil = new NetworkUtil();
-  static final BASE_URL = "https://rickandmortyapi.com/api/";
-  static final CHAR_URL = BASE_URL + "character/";
-  static final EPISODE_URL = BASE_URL + "episode/";
+  http.Client client = new http.IOClient();
 
   Future<List<Character>> getCharacters() async {
-    return _networkUtil.get(CHAR_URL).then(getCharacterList);
+    return _networkUtil.get(client, Configurations.CHAR_URL).then(getCharacterList);
   }
 
   List<Character> getCharacterList(dynamic res) {
