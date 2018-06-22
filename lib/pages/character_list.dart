@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rick/api/repository.dart';
 import 'package:flutter_rick/models/character.dart';
 import 'package:flutter_rick/pages/character_detail.dart';
+import 'package:http/http.dart' as http;
 
 class CharacterList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Repository repo = new Repository();
+    http.Client client = new http.IOClient();
 
     return new FutureBuilder(
-        future: repo.getCharacters(),
+        future: repo.getCharacters(client),
         builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
           if (!snapshot.hasData) {
             return new Center(
