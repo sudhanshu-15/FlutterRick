@@ -44,14 +44,14 @@ void main() {
 
   setUp(() {
     client = new MockClient();
-    _repository = new Repository();
+    _repository = new Repository(client: client);
   });
 
   group('getCharacters', () {
     test('get list of characters if http call is successful', () async {
       when(client.get(Configurations.CHAR_URL))
           .thenAnswer((_) async => http.Response(_responseString, 200));
-      var characterList = await _repository.getCharacters(client);
+      var characterList = await _repository.getCharacters();
       expect(characterList, isNotNull);
       expect(characterList, isInstanceOf<List<Character>>());
       expect(characterList.length, 1);
@@ -60,7 +60,7 @@ void main() {
     test('fetched list element is a Character', () async {
       when(client.get(Configurations.CHAR_URL))
           .thenAnswer((_) async => http.Response(_responseString, 200));
-      var characterList = await _repository.getCharacters(client);
+      var characterList = await _repository.getCharacters();
       var testCharacter = characterList[0];
       expect(testCharacter, isInstanceOf<Character>());
       expect(testCharacter.name, "Rick Sanchez");
@@ -69,7 +69,7 @@ void main() {
     test('throw exception if http call fails with error', () async {
       when(client.get(Configurations.CHAR_URL))
           .thenAnswer((_) async => http.Response('Not found', 404));
-      expect(_repository.getCharacters(client), throwsException);
+      expect(_repository.getCharacters(), throwsException);
     });
   });
 }

@@ -11,7 +11,7 @@ class CharacterList extends StatelessWidget {
     http.Client client = new http.IOClient();
 
     return new FutureBuilder(
-        future: repo.getCharacters(client),
+        future: repo.getCharacters(),
         builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
           if (!snapshot.hasData) {
             return new Center(
