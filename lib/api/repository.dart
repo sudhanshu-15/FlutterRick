@@ -9,14 +9,24 @@ class Repository {
   NetworkUtil _networkUtil = new NetworkUtil();
   http.Client client;
 
-  Repository({http.Client client}): this.client = client ?? new http.IOClient();
+  Repository({http.Client client})
+      : this.client = client ?? new http.IOClient();
 
   Future<List<Character>> getCharacters() async {
-    return _networkUtil.get(client, Configurations.CHAR_URL).then(getCharacterList);
+    return _networkUtil
+        .get(client, Configurations.CHAR_URL)
+        .then(getCharacterList);
   }
 
   Future<List<Character>> searchCharacters(String query) async {
-    return _networkUtil.get(client, Uri.parse(Configurations.CHAR_SEARCH_URL.replaceFirst("{1}", query)).toString()).then(getCharacterList);
+    return _networkUtil
+        .get(
+            client,
+            Uri
+                .parse(
+                    Configurations.CHAR_SEARCH_URL.replaceFirst("{1}", query))
+                .toString())
+        .then(getCharacterList);
   }
 
   List<Character> getCharacterList(dynamic res) {
