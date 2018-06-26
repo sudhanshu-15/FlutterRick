@@ -94,4 +94,5 @@ MockHttpClient createMockHttpClient(SecurityContext _) {
   when(request.close()).thenReturn(new Future<HttpClientResponse>.value(response));
   when(response.contentLength).thenReturn(_responseString.length);
   when(response.statusCode).thenReturn(HttpStatus.OK);
+  return client;
 }

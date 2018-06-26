@@ -7,9 +7,26 @@ import 'package:flutter_rick/utils/configs.dart';
 
 class Repository {
   NetworkUtil _networkUtil = new NetworkUtil();
+  http.Client client;
 
-  Future<List<Character>> getCharacters(http.Client client) async {
-    return _networkUtil.get(client, Configurations.CHAR_URL).then(getCharacterList);
+  Repository({http.Client client})
+      : this.client = client ?? new http.IOClient();
+
+  Future<List<Character>> getCharacters() async {
+    return _networkUtil
+        .get(client, Configurations.CHAR_URL)
+        .then(getCharacterList);
+  }
+
+  Future<List<Character>> searchCharacters(String query) async {
+    return _networkUtil
+        .get(
+            client,
+            Uri
+                .parse(
+                    Configurations.CHAR_SEARCH_URL.replaceFirst("{1}", query))
+                .toString())
+        .then(getCharacterList);
   }
 
   List<Character> getCharacterList(dynamic res) {
