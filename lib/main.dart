@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rick/pages/character_list.dart';
-import 'package:flutter_rick/pages/character_list_bloc.dart';
+import 'package:flutter_rick/pages/character_list_bloc_screen.dart';
 
 void main() => runApp(new MyApp());
 

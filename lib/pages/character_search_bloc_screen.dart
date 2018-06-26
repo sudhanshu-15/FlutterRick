@@ -4,7 +4,7 @@ import 'package:flutter_rick/bloc/character_filter_bloc.dart';
 import 'package:flutter_rick/bloc/character_filter_provider.dart';
 import 'package:flutter_rick/widgets/character_grid.dart';
 
-class CharacterSearchBloc extends StatelessWidget {
+class CharacterSearchBlocScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CharacterFilterProvider(

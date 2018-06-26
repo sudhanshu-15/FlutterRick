@@ -4,11 +4,11 @@ import 'package:flutter_rick/bloc/character_bloc.dart';
 import 'package:flutter_rick/bloc/character_provider.dart';
 import 'package:flutter_rick/models/character.dart';
 import 'package:flutter_rick/pages/character_detail.dart';
-import 'package:flutter_rick/pages/character_search_bloc.dart';
+import 'package:flutter_rick/pages/character_search_bloc_screen.dart';
 import 'package:flutter_rick/widgets/character_grid.dart';
 import 'package:http/http.dart' as http;
 
-class CharacterListBloc extends StatelessWidget {
+class CharacterListBlocScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CharacterProvider(
@@ -45,7 +45,7 @@ class _CharacterListImpl extends StatelessWidget {
         ),
         onPressed: () => Navigator.of(context).push(
               new MaterialPageRoute(
-                builder: (context) => CharacterSearchBloc(),
+                builder: (context) => CharacterSearchBlocScreen(),
               ),
             ),
       ),

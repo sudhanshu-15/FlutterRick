@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rick/api/repository.dart';
 import 'package:flutter_rick/models/character.dart';
 import 'package:flutter_rick/pages/character_detail.dart';
-import 'package:flutter_rick/pages/character_list_bloc.dart';
+import 'package:flutter_rick/pages/character_list_bloc_screen.dart';
 import 'package:flutter_rick/widgets/character_grid.dart';
 import 'package:http/http.dart' as http;
 
@@ -35,7 +35,7 @@ class CharacterList extends StatelessWidget {
         ),
         onPressed: () => Navigator.of(context).push(
               new MaterialPageRoute(
-                builder: (BuildContext context) => CharacterListBloc(),
+                builder: (BuildContext context) => CharacterListBlocScreen(),
               ),
             ),
       ),
