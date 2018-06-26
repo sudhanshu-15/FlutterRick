@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rick/api/repository.dart';
 import 'package:flutter_rick/models/character.dart';
 import 'package:flutter_rick/pages/character_detail.dart';
+import 'package:flutter_rick/pages/character_list_bloc.dart';
 import 'package:http/http.dart' as http;
 
 class CharacterList extends StatelessWidget {
@@ -10,7 +11,11 @@ class CharacterList extends StatelessWidget {
     Repository repo = new Repository();
     http.Client client = new http.IOClient();
 
-    return new FutureBuilder(
+    return Scaffold(
+      appBar: new AppBar(
+        title: new Text('RickOPedia Vanilla'),
+      ),
+      body: new FutureBuilder(
         future: repo.getCharacters(),
         builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
           if (!snapshot.hasData) {
@@ -33,7 +38,17 @@ class CharacterList extends StatelessWidget {
               )
             ],
           );
-        });
+        },
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.swap_calls, size: 30.0,),
+        onPressed: () => Navigator.of(context).push(
+              new MaterialPageRoute(
+                builder: (BuildContext context) => CharacterListBloc(),
+              ),
+            ),
+      ),
+    );
   }
 
   List<Widget> _createCharacterCard(

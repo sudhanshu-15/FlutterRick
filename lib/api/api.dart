@@ -14,7 +14,6 @@ class NetworkUtil {
     return client.get(url).then((http.Response response) {
       final String responseBody = response.body;
       final int statusCode = response.statusCode;
-
       if (statusCode < 200 || statusCode > 400 || json == null) {
         throw new Exception("Error while fetching data");
       }
