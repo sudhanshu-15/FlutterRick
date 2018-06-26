@@ -4,6 +4,7 @@ import 'package:flutter_rick/bloc/character_bloc.dart';
 import 'package:flutter_rick/bloc/character_provider.dart';
 import 'package:flutter_rick/models/character.dart';
 import 'package:flutter_rick/pages/character_detail.dart';
+import 'package:flutter_rick/pages/character_search_bloc.dart';
 import 'package:http/http.dart' as http;
 
 class CharacterListBloc extends StatelessWidget {
@@ -11,12 +12,12 @@ class CharacterListBloc extends StatelessWidget {
   Widget build(BuildContext context) {
     return CharacterProvider(
       characterBloc: CharacterBloc(new Repository()),
-      child: CharacterListImpl(),
+      child: _CharacterListImpl(),
     );
   }
 }
 
-class CharacterListImpl extends StatelessWidget {
+class _CharacterListImpl extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final characterBloc = CharacterProvider.of(context);
@@ -48,6 +49,17 @@ class CharacterListImpl extends StatelessWidget {
             ],
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.search,
+          size: 30.0,
+        ),
+        onPressed: () => Navigator.of(context).push(
+              new MaterialPageRoute(
+                builder: (context) => CharacterSearchBloc(),
+              ),
+            ),
       ),
     );
   }
