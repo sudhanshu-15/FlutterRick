@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rick/pages/character_list.dart';
-import 'package:flutter_rick/pages/character_list_bloc.dart';
+import 'package:flutter_rick/bloc/page_indicator_provider.dart';
+import 'package:flutter_rick/pages/character_pager_view.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: CharacterList(),
+      home: PageIndicatorProvider(child: CharacterPager()),
     );
   }
 }
